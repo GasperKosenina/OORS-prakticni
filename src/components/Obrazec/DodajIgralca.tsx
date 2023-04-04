@@ -27,7 +27,7 @@ const DodajIgralca = (props: dodajIgralcaProps) => {
             const nextState = {
                 ...prevState,
                 id: prevState.id++,
-                [name]: name == "bogat" ? true : value,
+                [name]: name === "bogat" ? true : value,
             };
             return nextState;
         })
